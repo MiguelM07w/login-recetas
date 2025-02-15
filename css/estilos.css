@@ -1,0 +1,107 @@
+/* Estilos personalizados para el Buscador de Recetas */
+
+:root {
+    --primary-color: #198754; /* Verde Bootstrap */
+    --secondary-color: #f8f9fa; /* Fondo Claro */
+    --dark-color: #212529; /* Negro Bootstrap */
+    --gradient: linear-gradient(135deg, #198754, #145c38); /* Degradado Verde */
+    --transition: all 0.3s ease-in-out;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--secondary-color);
+}
+
+
+/* Navbar */
+.navbar {
+    background: var(--gradient) !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff !important;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Formulario de Búsqueda */
+form {
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+form select {
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+}
+
+/* Botones */
+.btn {
+    transition: var(--transition);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+/* Tarjetas de Recetas */
+.card {
+    transition: var(--transition);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 10px;
+}
+
+/* Toast */
+.toast-header {
+    font-weight: bold;
+}
+
+.toast-body {
+    font-size: 1.1rem;
+}
+
+/* Pie de Página */
+.footer {
+    background: var(--dark-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
